@@ -12,9 +12,9 @@ describe Topping do
   end
   describe '.initialize' do 
     it "sets the name of the topping" do 
-      topping = Topping.new('olives')
+      topping = Topping.new 'bell pepper', vegetarian: true
 
-      expect(topping.name).to eq('olives')
+      expect(topping.vegetarian).to eq(true)
     end
   end
 end
